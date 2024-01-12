@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2>Weather App</h2>
+        <div class="search-bar">
+            <input type="text" value="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="weather-img">
+            <img src="clear.png">
+        </div>
+        <div class="temp-country">
+            <p id="temp">0°C</p>
+            <p id="city">CITY</p>
+        </div>
+        <div class="humid-wind">
+            <div class="humid">
+                <img src="humidity.png">
+                <div class="display-box1">
+                 <p id="humi">...%</p>
+                 <p id="humi2">Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <img src="wind.png">
+                <div class="display-box2">
+                <p id="W-speed">... km/h</p>
+                <p id="W-speed2">wind speed</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
