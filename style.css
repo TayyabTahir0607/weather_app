@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.container{
+    height: 80vh;
+    width: 28vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg,#00feba,#6c678a);
+    margin-top: 200px;
+    border-radius: 2rem;
+}
+.search-bar i{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: black;
+   border-radius: 50%;
+   font-size: 20px;
+   margin-left: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.search-bar input{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.weather-img{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.weather-img img{
+    width: 150px;
+    height: 150px;
+}
+h2{
+    margin-top: 20px;
+    color: black;
+}
+.temp-country{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 35px;
+    margin-bottom: 30px;
+
+}
+.humid-wind{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.wind{
+    width: 12.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.humid{
+    width: 12.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.humid img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.wind img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.wind{
+    font-size: 20px;
+}
+.humid{
+    font-size: 20px;
+}
+#W-speed{
+    font-size: 25px;
+}
+#W-speed2{
+    font-size: 15px;
+    margin-top: 3px;
+}
+#humi{
+    font-size: 25px;
+}
+#humi2{
+    font-size: 15px;
+    margin-top: 3px;
+}
