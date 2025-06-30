@@ -13,11 +13,8 @@ btn.addEventListener("click",cty=()=>{
     
     
     (fetchWeather=async()=>{
-        console.log("fetching data....")
         let data=await fetch(`${Api1}${cityName}${Api2}`);
-        console.log("converting data into json object....")
         data= await data.json();
-        console.log(data);
         updateCity.innerText=cityName;
         updateTemp.innerText= `${Math.round(data.main.temp)}°C`;
         updateWind.innerText=`${data.wind.speed} km/h`;
