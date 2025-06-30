@@ -1,128 +1,155 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color: grey;
+
+body {
+    background-color: #444;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    min-height: 100vh;
+    overflow: auto;
 }
-.container{
-    height: 80vh;
-    width: 28vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background: linear-gradient(135deg,#00feba,#6c678a);
-    margin-top: 200px;
+
+.container {
+    background: linear-gradient(130deg, #00feba, #6c678a);
     border-radius: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
 }
-.search-bar i{
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 50px;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 0 1rem;
+    outline: none;
+}
+
+.search-bar i {
     width: 50px;
     height: 50px;
     background-color: #fff;
     color: black;
-   border-radius: 50%;
-   font-size: 20px;
-   margin-left: 15px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.search-bar input{
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 1rem;
-    color: black;
-    font-size: 1.25rem;
-    text-align: center;
-}
-.search-bar{
+    border-radius: 50%;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.weather-img{
-    width: 25vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 
+.search-bar i:hover {
+    background-color: #ddd;
 }
-.weather-img img{
+
+.weather-img img {
     width: 150px;
     height: 150px;
 }
-h2{
-    margin-top: 20px;
-    color: black;
-}
-.temp-country{
-    width: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 35px;
-    margin-bottom: 30px;
 
+h2 {
+    font-size: 1.5rem;
+    color: #222;
+    text-align: center;
+    width: 100%;
 }
-.humid-wind{
-    width: 25vw;
+
+.temp-country {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
 }
-.wind{
-    width: 12.5vw;
+
+.temp-country p {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    color: #eee;
+}
+
+.humid-wind {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
 }
-.humid{
-    width: 12.5vw;
+
+.humid,
+.wind {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
 }
-.humid img{
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+
+.humid img,
+.wind img {
+    width: 30px;
+    height: 30px;
 }
-.wind img{
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+
+#W-speed,
+#humi {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.wind{
-    font-size: 20px;
-}
-.humid{
-    font-size: 20px;
-}
-#W-speed{
-    font-size: 25px;
-}
-#W-speed2{
-    font-size: 15px;
+
+#W-speed2,
+#humi2 {
+    font-size: 0.9rem;
     margin-top: 3px;
+    color: #ddd;
 }
-#humi{
-    font-size: 25px;
-}
-#humi2{
-    font-size: 15px;
-    margin-top: 3px;
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    .weather-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .temp-country {
+        font-size: 1.8rem;
+    }
+
+    .search-bar input {
+        font-size: 1rem;
+    }
 }
